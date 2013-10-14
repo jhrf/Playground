@@ -7,7 +7,9 @@ import sys
 n = sys.argv[1]
 j = sys.argv[2]
 
-print n 
-print j
+combs = []
 
+for n_i in range(n):
+	for n_j in range(j):
+		
 

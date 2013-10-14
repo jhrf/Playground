@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
 #This program tests how quickly numpy loads and saves files
+#	Example innvocation:
+#		./numpyLoadTester.py -x 3 -y 1080000 -n test1
 
 import numpy as np, random, argparse, pdb,time
 
