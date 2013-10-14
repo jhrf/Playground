@@ -22,7 +22,7 @@ def createNp():
 	np.save("NP" + cmd_args.n, arr)
 	print "Saving NP took {0}".format(time.time() - np_st_tm)
 
-	del(arr)
+	del(arr) #Delete the array we created. This is to conserve memory
 
 	csv_st_tm = time.time()
 	arr_csv = np.loadtxt("CSV" + cmd_args.n, delimiter=",")
