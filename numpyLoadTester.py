@@ -32,9 +32,12 @@ def createNp():
 	print "Loading NP took {0}".format(time.time() - np_st_tm)
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-x',type=int,nargs="?",default=4,help="x (across) dimension for numpy array")
-parser.add_argument('-y',type=int,nargs="?",default=1000,help='y (down) dimension for numpy array')
-parser.add_argument('-n',type=str,nargs="?",default="NPfile",help='File name for numpy')
+parser.add_argument('-x',type=int,nargs="?",
+				default=4,help="x (across) dimension for numpy array")
+parser.add_argument('-y',type=int,nargs="?",
+				default=1000,help='y (down) dimension for numpy array')
+parser.add_argument('-n',type=str,nargs="?",
+				default="NPfile",help='File name for numpy')
 
 cmd_args = parser.parse_args()
 
